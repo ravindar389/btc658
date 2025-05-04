@@ -1,3 +1,4 @@
+
 import os
 import time
 import random
@@ -10,6 +11,11 @@ import telebot
 # Telegram setup
 BOT_TOKEN = os.environ.get("7480019882:AAFpRKfsv_TZn2nKIqsFpN1VGCCtNwBjgmo")
 CHAT_ID = os.environ.get("5302763233")
+
+if not BOT_TOKEN or not CHAT_ID:
+    print("BOT_TOKEN or CHAT_ID missing! Please check environment variables.")
+    exit()
+
 bot = telebot.TeleBot(BOT_TOKEN)
 
 def send_status(msg):
@@ -68,4 +74,3 @@ except Exception as e:
     send_status(f"❌ Bot crashed: {e}")
 finally:
     driver.quit()
-
