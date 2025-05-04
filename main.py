@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 import telebot
 
 # Telegram setup
-BOT_TOKEN = os.environ.get("7480019882:AAFpRKfsv_TZn2nKIqsFpN1VGCCtNwBjgmo")
+BOT_TOKEN = os.environ.get("7480019882:AAGWpOtBG_ETa2wdkxesNXzLpww8Srn1xf0")
 CHAT_ID = os.environ.get("5302763233")
 
 if not BOT_TOKEN or not CHAT_ID:
