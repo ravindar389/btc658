@@ -68,3 +68,4 @@ except Exception as e:
     send_status(f"❌ Bot crashed: {e}")
 finally:
     driver.quit()
+
